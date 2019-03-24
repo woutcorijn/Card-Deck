@@ -1,0 +1,97 @@
+body {
+	margin: 0 auto;
+}
+
+#card {
+	font-size:45px;
+	width: 337.5px;
+	height: 525px;
+	border-style: solid;
+	border-color: black;
+	border-radius: 20px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	transition: box-shadow 0.5s;
+	-webkit-transition: box-shadow 0.5s;
+	cursor:pointer;
+}
+
+#card:hover {
+	box-shadow: 0 16px 32px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.20);
+}
+
+.number {
+ margin:20px;
+}
+
+#left_top {
+float: left;	
+}
+
+#right_bottom {
+	right:0;
+	position:absolute;
+	bottom: 0;
+}
+
+#drawing {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: auto;
+	height:75%;
+}
+
+#Number_select {
+	width:90px;
+}
+
+#Type_select {
+	width:90px;
+}
+
+#control {
+	text-align:center;
+	margin-top:100px;
+}
+
+@media screen and (max-width: 1370px) {
+	#card {
+	font-size:25px;
+	width: 225px;
+	height: 350px;
+}
+#control {
+	margin-top:60px;
+}
+}
+
+     /* mobile */
+	@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 736px)
+{
+	#Number_select {
+	font-size:18px;
+	width:110px;
+}
+	#Type_select {
+	font-size:18px;
+	width:110px;
+}
+	#card {
+	font-size:28px;
+	width: 225px;
+	height: 350px;
+	cursor:default;
+}
+#control {
+	margin-top:40px;
+}
+.number {
+ margin:15px;
+}
+}
