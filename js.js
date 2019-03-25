@@ -1,6 +1,7 @@
 var Number = "1";
 var CardType = "C";
-var cards = ["1","2","3","4","5","6","7","8","9","10","J","Q","K"]
+var RandNumber = ["1","2","3","4","5","6","7","8","9","10","J","Q","K"];
+var RandCardType = ["C","D","H","S"];
 
 function Card_function() {
 	Number = document.getElementById("Number_select").value;
@@ -18,7 +19,10 @@ function Card_function() {
 }
 
 function random_button() {
-Math.floor(Math.random() * 13) + 1;	
+	Number = RandNumber[Math.floor(Math.random() * 12)];
+	CardType = RandCardType[Math.floor(Math.random() * 3)];	
+	document.getElementsByClassName("number")[0].innerHTML = Number;
+	document.getElementsByClassName("number")[1].innerHTML = Number;
+	document.getElementById("drawing").src = "images/" + Number + CardType + ".png"
 }
 
-console.log(cards[11]);
