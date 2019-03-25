@@ -21,4 +21,4 @@ function random_button() {
 Math.floor(Math.random() * 13) + 1;	
 }
 
-console.log(cards[11];
+console.log(cards[11]);
