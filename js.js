@@ -1,5 +1,6 @@
 var Number = "1";
 var CardType = "C";
+var cards = ["1","2","3","4","5","6","7","8","9","10","J","Q","K"]
 
 function Card_function() {
 	Number = document.getElementById("Number_select").value;
@@ -15,3 +16,9 @@ function Card_function() {
 	}
 	document.getElementById("drawing").src = "images/" + Number + CardType + ".png"
 }
+
+function random_button() {
+Math.floor(Math.random() * 13) + 1;	
+}
+
+console.log(cards[11];
