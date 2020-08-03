@@ -27,7 +27,7 @@ body {
 }
 
 #left_top {
-float: left;	
+float: left;
 }
 
 #right_bottom {
@@ -88,7 +88,7 @@ float: left;
 	color: black;
 }
 
-@media screen and (max-width: 1370px) {
+@media screen and (max-width: 1600px) {
 	#card {
 	font-size:25px;
 	width: 225px;
