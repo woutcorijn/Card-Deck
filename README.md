@@ -1,5 +1,4 @@
 # Card-Deck
-Card-Deck is a site to view a standard 52 Deck of cards.
+Card-Deck is an online standard 52 Deck of cards.
 <br>
-https://woutcorijn.github.io/Card-Deck/
-
+https://card-deck.woutcorijn.com/
