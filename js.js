@@ -1,13 +1,13 @@
-var Number = "1";
+var Number = "A";
 var CardType = "C";
-var RandNumber = ["1","2","3","4","5","6","7","8","9","10","J","Q","K"];
+var RandNumber = ["A","2","3","4","5","6","7","8","9","10","J","Q","K"];
 var RandCardType = ["C","D","H","S"];
 
 function Main_function() {
 		console.log("Main");
 	document.getElementsByClassName("number")[0].innerHTML = Number;
 	document.getElementsByClassName("number")[1].innerHTML = Number;
-	
+
 	if (CardType == "D" || CardType == "H") {
 		document.getElementsByClassName("number")[0].style.color = "red";
 		document.getElementsByClassName("number")[1].style.color = "red";
@@ -15,15 +15,15 @@ function Main_function() {
 		document.getElementsByClassName("number")[0].style.color = "Black";
 		document.getElementsByClassName("number")[1].style.color = "Black";
 	}
-	
+
 }
 
-function Card_function() {	
+function Card_function() {
 console.log("card");
 	Number = document.getElementById("Number_select").value;
 	CardType = document.getElementById("Type_select").value;
 	Main_function()
-    document.getElementById("drawing").src = "images/" + Number + CardType + ".png"	
+    document.getElementById("drawing").src = "images/" + Number + CardType + ".png"
 }
 
 function random_button() {
@@ -49,4 +49,3 @@ function turn_button() {
 	document.getElementsByClassName("number")[1].style.display = "none";
 	}
 }
-
